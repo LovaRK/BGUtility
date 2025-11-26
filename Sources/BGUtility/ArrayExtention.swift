@@ -6,7 +6,7 @@
 //
 
 public extension Array {
-    subscript (safeIndex index: Int) -> Element? {
-        return indices ~= index ? self[index] : nil
+    subscript(safeIndex index: Int) -> Element? {
+        return indices.contains(index) ? self[index] : nil
     }
 }
