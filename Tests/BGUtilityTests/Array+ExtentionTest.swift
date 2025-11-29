@@ -1,5 +1,6 @@
 //
 //  Array+ExtensionTests.swift
+
 //  BGUtility
 //
 //  Created by Rama Krishna on 11/26/25.
@@ -8,8 +9,9 @@
 import XCTest
 @testable import BGUtility
 
-final class ArrayExtensionTests: XCTestCase {
-    func testSafeIndex_ValidMiddleIndexReturnsElement() {
+final class ArrayExtentionTest: XCTestCase {
+    func testSafeIndex_ValidIndexReturnsElement() {
+>>>>>>> origin/main
         let array = [10, 20, 30]
         let value = array[safeIndex: 1]
         XCTAssertEqual(value, 20)
@@ -51,4 +53,5 @@ final class ArrayExtensionTests: XCTestCase {
         let value = array[safeIndex: array.count - 1]
         XCTAssertEqual(value, "z")
     }
+
 }
