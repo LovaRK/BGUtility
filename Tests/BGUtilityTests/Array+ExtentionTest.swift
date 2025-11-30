@@ -10,6 +10,7 @@ import XCTest
 @testable import BGUtility
 
 final class ArrayExtentionTest: XCTestCase {
+    
     func testSafeIndex_ValidIndexReturnsElement() {
         let array = [10, 20, 30]
         let value = array[safeIndex: 1]
